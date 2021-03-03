@@ -1,0 +1,28 @@
+<!--
+ * @Descripttion: 
+ * @Version: 
+ * @Date: 2021-01-13 14:15:20
+-->
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>pdf在线预览</title>
+</head>
+
+<body>
+  <button onclick="preview()">PDF预览</button>
+</body>
+<script src="js/pdf.js"></script>
+<script src="js/pdf.worker.js"></script>
+<script>
+  function preview() {
+    console.log('跳转页面');
+    var pdf = 'https://www.baidu.com/1.pdf';
+    // pdf地址必须是线上地址
+    window.open('./js/pdf/web/viewer.html?file=' + pdf, 'PDF');
+  }
+</script>
+
+</html>
